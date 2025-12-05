@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"rel="stylesheet"/>
+    <title>TB Ntlaba | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRIMARY NAVIGATION (Header) -->
+    <header class="main-header">
+        <div class="logo">TB Ntlaba.</div>
+      
+        <nav id="main-nav" class="navbar">
+            <a href="#home" class="nav-link active" onclick="showPage('home')">Home</a>
+            <a href="#portfolio" class="nav-link" onclick="showPage('portfolio')">Portfolio</a>
+            <a href="#about" class="nav-link" onclick="showPage('about')">About</a>
+            <a href="#contact" class="nav-link" onclick="showPage('contact')">Contact</a>
+        </nav>
+        
+        <i class="ri-menu-line menu-icon" onclick="toggleMenu()"></i>
+    </header>
+
+    <main class="main-content-container">
+
+        <!-- 1. HOME PAGE -->
+        <section id="home" class="page-section">
+            <div class="intro-grid">
+                
+                <div class="image-area">
+                    <img src="pro.jpg" alt="TB Ntlaba Profile Picture" class="profile-pic">
+                </div>
+               
+                <div class="text-area">
+                    <h1>Hello, I'm TB Ntlaba-an ICT Student & Aspiring Web developer.</h1>
+                    <p class="bio">
+                        I’m passionate about creating clean, responsive, and user-friendly websites. <br>As a student specializing in Application Development, I enjoy turning ideas into digital experiences that look great and work perfectly.
+                        <p> My focus is on designing websites that are both functional and easy to use.</p>
+                    </p>
+                    <h3>Skills Overview</h3>
+
+                    
+                    <ul>
+                        <li>HTML5 Structure & Semantics</li>
+                        <li>CSS Styling & Responsiveness</li>
+                        <li>Basic JavaScript Logic</li>
+                        <li>UI/UX Design Principles</li>
+                    </ul>
+                    <a href="#portfolio" onclick="showPage('portfolio')" class="button">View My Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT PAGE -->
+        <section id="about" class="page-section hidden">
+            <h2>My Background and Goals</h2>
+            <div class="content-card">
+                <p>
+                    
+                <h2>My journey </h2>
+                <p>My journey in IT started when I became amazed by how simple code could turn into something powerful. I still remember back in 2024, when I was doing my Higher Certificate in ICT , the first time I wrote basic HTML and saw my own webpage appear on the screen. It honestly felt like magic! </p>
+                    <p> That moment made me fall in love with technology and inspired me to learn more about web design, which is why I decided to continue with a Diploma in ICT.</p>
+                    <p>As I learned more, I got interested in how all the parts of a website work together  the layout, design, and how people interact with it. </p> 
+                    <p> I also learned about making websites accessible for everyone, including people with disabilities. I believe a good design isn’t just about how it looks, but also how easy it is to use. So whenever I work on a site, I always aim to make it both beautiful and simple to navigate.  </p>
+                    <p>Right now, I’m focused on improving my skills in front-end frameworks like React. My long-term dream is to become a certified UX designer who uses research and creativity to build digital products that truly make people’s lives easier.</p>
+                
+                <h2>My Goals </h2>
+                <p><strong><h3>Short-Term Goal:</h3></strong>
+                        Right now, my main goal is to learn more about front-end libraries like React. I want to understand how to create websites that are interactive and respond to users in real time. Learning these tools will help me build websites that are not only
+                         functional but also enjoyable for people to use.
+
+                        <strong><h3> Mid-Term Goal:</h3></strong>
+                        In the next few years, I want to take on more challenging projects that push me to grow my skills. I also hope to work with other designers and developers to bring creative ideas to life. Another goal of mine is to gain experience in user testing, 
+                        so I can see how real people use my designs and improve them based on their feedback.
+
+                        <strong> <h3>Long-Term Goal:</h3></strong>
+                        My biggest dream is to become a certified UX designer. I want to understand how people use digital products and use that knowledge to design solutions that truly make a difference. Whether it’s improving accessibility, making things easier to use,
+                         or helping people in their everyday lives, I want my work to have a positive impact.
+                        I’m very excited about my future in the IT field and eager to keep learning and growing in this fast-changing industry. I know there’s still a lot to discover, but I’m ready to face new challenges and take every opportunity that comes my way.</p>
+            </div>
+        </section>
+
+        <!-- 3. PORTFOLIO PAGE --->
+        <section id="portfolio" class="page-section hidden">
+            <h2>Projects Gallery</h2>
+            <p style="margin-bottom: 30px;">A detailed, organized showcase of projects completed during my studies.</p>
+            
+            
+            <div class="portfolio-table-container">
+                <table class="project-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="col-year">Year</th>
+                            <th>Description</th>
+                            <th class="col-languages">Languages Used</th>
+                            <th class="col-visual">Picture/Visual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td data-label="Name">Responsive Donation Page</td>
+                            <td data-label="Year" class="col-year">2024</td>
+                            <td data-label="Description">Designed a user-friendly and **mobile-responsive donation page** to improve online contributions for an NGO website, focusing on clear calls-to-action and accessibility.</td>
+                            <td data-label="Languages" class="col-languages">HTML5, CSS, JavaScript</td>
+                            <td data-label="Visual" class="col-visual">
+                                <img src="donationPage.png" alt="Screenshot of the Responsive Donation Page" class="table-visual">
+                            </td>
+                        </tr>
+
+                      
+                        <tr>
+                            <td data-label="Name">Company Financial Overview</td>
+                            <td data-label="Year" class="col-year">2024</td>
+                            <td data-label="Description">Built a comprehensive Excel sheet detailing **income, expenses, and charting** for financial analysis and streamlined management reporting.</td>
+                            <td data-label="Languages" class="col-languages">Microsoft Excel</td>
+                            <td data-label="Visual" class="col-visual">
+                                <img src="excelProject.png" alt="Screenshot of the Company Financial Overview in Excel" class="table-visual">
+                            </td>
+                        </tr>
+
+                     
+                        <tr>
+                            <td data-label="Name">Multimedia Branding Project</td>
+                            <td data-label="Year" class="col-year">2025</td>
+                            <td data-label="Description">Created a full business brand identity, including **logo design, color palette selection, and marketing visual creation** with a promotional video.</td>
+                            <td data-label="Languages" class="col-languages">Canva, Photoshop, Video Editing</td>
+                            <td data-label="Visual" class="col-visual">
+                            
+                                <video controls class="table-visual"> 
+                                    <source src="logo+brand.mp4" type="video/mp4"> 
+                                    Your browser does not support the video tag.
+                                </video>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+            
+        <!-- 4. CONTACT PAGE -->
+        <section id="contact" class="page-section hidden">
+            <h2>Get In Touch</h2>
+            <div class="content-card contact-area">
+                <p>
+                    Use the simple form below to send me a message.
+                </p>
+                
+              
+                <form id="contact-form" onsubmit="handleSubmit(event)">
+                    <div id="in-page-message" class="in-page-confirmation hidden">
+                        <i class="ri-check-line confirmation-icon"></i> 
+                        Message sent successfully!
+                        <button type="button" class="confirmation-button" onclick="hideMessage()">Okay</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="button">Send Message</button>
+                    
+                </form>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER --->
+    <footer class="main-footer">
+        
+        
+        <div class="social-links">
+            <a href="https://linkedin.com/in/Thandiwe Ntlaba" target="_blank" class="ri-linkedin-fill social-icon-link" aria-label="LinkedIn Profile"></a>
+            <a href="https://github.com/Thandiwe-star" target="_blank" class="ri-github-fill social-icon-link" aria-label="GitHub Profile"></a>
+            <a href="https://facebook.com/Ntlaba Beauty Thandiwe_" target="_blank" class="ri-facebook-circle-line social-icon-link" aria-label="Instagram Profile"></a>
+        </div>
+        
+       
+        <p class="copyright">&copy; 2025 TB Ntlaba.</p>
+
+        <nav class="footer-nav">
+            <a href="#home" onclick="showPage('home')">Home</a>
+            <a href="#portfolio" onclick="showPage('portfolio')">Projects</a>
+            <a href="#contact" onclick="showPage('contact')">Get In Touch</a>
+        </nav>
+    </footer>
+
+    <script>
+        function closeMobileMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.remove('open');
+        }
+        
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('open');
+        }
+
+        function showPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.style.display = 'none'; 
+            });
+            document.getElementById(pageId).style.display = 'block';
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`.nav-link[onclick="showPage('${pageId}')"]`).classList.add('active');
+         
+            hideMessage(); 
+            
+          
+            closeMobileMenu(); 
+        }
+      
+        function showMessage() {
+            const msg = document.getElementById('in-page-message');
+            msg.classList.remove('hidden');
+        }
+        
+        function hideMessage() {
+            const msg = document.getElementById('in-page-message');
+            msg.classList.add('hidden');
+        }
+        
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            console.log('Form Submitted!');
+            
+            showMessage();
+            
+            document.getElementById('contact-form').reset();
+            
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage('home');
+        });
+    </script>
+
+</body>
+</html>
